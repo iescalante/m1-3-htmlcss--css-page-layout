@@ -39,19 +39,19 @@ body {
   }
 }
 @keyframes bounce {
-  from {
+  0% {
     transform: scale(1) rotate(0);
   }
   80% {
-    transform: scale(1.2) rotate(290deg);
+    transform: scale(1) rotate(290deg);
   }
   90% {
     transform: scale(1.2) rotate(320deg);
   }
-  to {
-    transform: scale(1) rotate (360deg);
+  100% {
+    transform: scale(1) rotate(360deg);
   }
 }
 .cool:hover {
-  animation: bounce 1.5s ease-in-out;
+  animation: bounce 1s ease-in-out;
 }
