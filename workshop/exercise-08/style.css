@@ -1,49 +1,87 @@
 body {
-    margin: 0;
-    font-family: Poppins, sans-serif;
+  margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 .header {
-
+  background-color: #008cc4;
+  color: white;
+  text-align: center;
+  padding: 10px 50px 20px;
+  box-shadow: 0px 4px 6px 2px grey;
+  margin: 0px;
 }
 
 .registration-form {
-
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px 1px rgb(218, 218, 218);
+  margin-bottom: 20px;
 }
 
 .text-field {
-
+  display: block;
+  box-sizing: border-box;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid blue;
 }
 
 .radio-label,
 .checkbox-label {
-
+  text-align: left;
+  margin: 10px;
+  margin-left: 0;
 }
 
 label {
-
+  display: block;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .section {
-
+  border-top: 1px solid grey;
+  padding: 10px 0;
 }
 
 .section > label {
-
+  text-align: left;
 }
 
 select {
-
+  font-size: 1rem;
+  margin-left: 10px;
 }
 
 textarea {
-
+  display: block;
+  width: 100%;
+  background-color: rgb(220, 220, 220);
+  border: 0px;
+  margin-top: 10px;
+  min-height: 100px;
+  font-size: 1rem;
 }
 
 .form-button {
-
+  display: block;
+  font-size: 1rem;
+  padding: 20px 40px;
+  border: 1px solid blue;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .form-button:hover {
-    
+  color: white;
+  background-color: aqua;
 }
