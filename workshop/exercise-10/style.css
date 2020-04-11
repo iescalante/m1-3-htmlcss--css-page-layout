@@ -10,7 +10,48 @@ body {
 }
 
 .fast {
+  animation: slideIn 1s ease-in-out;
 }
 
 .cool {
+  display: block;
+  position: relative;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 0 solid dodgerblue;
+  cursor: pointer;
+  margin: 20px auto;
+  box-shadow: 0px 2px 12px 2px #a1a1a1;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: scale(1) rotate(0);
+  }
+  80% {
+    transform: scale(1.2) rotate(290deg);
+  }
+  90% {
+    transform: scale(1.2) rotate(320deg);
+  }
+  to {
+    transform: scale(1) rotate (360deg);
+  }
+}
+.cool:hover {
+  animation: bounce 1s ease-in-out;
 }
