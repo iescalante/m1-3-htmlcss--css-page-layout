@@ -2,6 +2,32 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+}
+.desktop-nav ul li {
+  margin: 0px 20px;
+}
+.desktop-nav ul li:last-of-type {
+  margin-right: 0px;
+}
+@media (min-width: 800px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+@media (max-width: 799px) {
+  .desktop-nav {
+    display: none;
+  }
+}
 .mobile-nav-button img {
   width: 18px;
 }
